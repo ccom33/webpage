@@ -11,9 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <!--        스크립트 정의 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="assets/js/jquery.bxslider.min.js"></script>
+<!--        <script src="assets/js/jquery.bxslider.min.js"></script>-->
 <!--        css 정의 -->
-        <link rel="stylesheet" href="assets/css/jquery.bxslider.min.css">
+<!--        <link rel="stylesheet" href="assets/css/jquery.bxslider.min.css">-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/w3.css" >
 <!--        폰트 정의-->
@@ -28,14 +28,14 @@
                 h2 {
                     font-family:'Coiny', cursive;
                 }
-                .mySlides {display:none}
+                
             </style>
 	</head>
     <body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
+                  
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
@@ -68,10 +68,18 @@
 							<article id="intro">
 								<h2 class="major">프롤로그</h2>
 								<span class="image main">
-                                    <div class="w3-content" style="max-width:800px">
-                                      <img class="mySlides" src="images/%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8_%ED%99%88%EC%BB%A4%EB%B0%8D.png">
-                                      <img class="mySlides" src="images/%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8_%ED%99%88%EC%BB%A4%EB%B0%8D.png">
-                                      <img class="mySlides" src="images/%ED%83%9D%EC%8B%9C%EC%9A%B4%EC%A0%84%EC%82%AC.png" >
+                                    <div class="bx">
+                                        <div><img src="http://placehold.it/960x660" alt=""></div>
+                                        <div><img src="http://placehold.it/960x660" alt=""></div>
+                                        <div><img src="http://placehold.it/960x660" alt=""></div>
+                                        <div><img src="http://placehold.it/960x660" alt=""></div>
+                                        <div><img src="http://placehold.it/960x660" alt=""></div>
+                                    </div>
+<!--
+                                     <div class="w3-content" style="max-width:800px">
+                                      <img class="mySlides" src="images/god.png">
+                                      <img class="mySlides" src="images/gun.png">
+                                      <img class="mySlides" src="images/guard.png" >
                                     </div>
 
                                     <div class="w3-center">
@@ -82,7 +90,8 @@
                                       <button class="w3-btn demo" onclick="currentDiv(1)">1</button> 
                                       <button class="w3-btn demo" onclick="currentDiv(2)">2</button> 
                                       <button class="w3-btn demo" onclick="currentDiv(3)">3</button> 
-                                    </div>
+                                    </div> 
+-->
                                         
                                     
                                     
@@ -110,7 +119,15 @@
 						<!-- Work1 -->
 							<article id="work1">
 								<h2 class="major">분석결과1</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<span class="image main">
+                                    <div class="bx">
+                                        <div><img src="http://placehold.it/960x660" alt=""></div>
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                    </div>
+                                </span>
 								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 							 </article> 
@@ -118,7 +135,15 @@
 						<!-- Work2 --> 
 							<article id="work2"> 
 								<h2 class="major">분석결과2</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<span class="image main">
+                                    <div class="bx">
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                    </div>
+                                </span>
 								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 							</article>
@@ -126,13 +151,21 @@
 						<!-- work3 -->
 							<article id="work3">
 								<h2 class="major">분석결과3</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<span class="image main">
+                                    <div class="bx">
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                        <div><img src="http://placehold.it/960x660"></div>
+                                    </div>
+                                </span>
 								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
 							</article>
 
 						<!-- complete -->
 							<article id="complete">
-								<h2 class="major">complete</h2>
+								<h2 class="major">결론</h2>
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
@@ -421,6 +454,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<!--
             <script>
     var slideIndex = 1;
     showDivs(slideIndex);
@@ -440,7 +474,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
       x[slideIndex-1].style.display = "block";  
     }
     </script>
+-->
         
+<!--
     <script>
     var slideIndex = 1;
     showDivs(slideIndex);
@@ -469,7 +505,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
       dots[slideIndex-1].className += " w3-white";
     }
     </script>
+-->
         
+<!--
     <script>
     $(document).ready(function(){
     $('.bxslider').bxSlider({
@@ -477,6 +515,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
       hideControlOnEnd: true});
     });
     </script>
+-->
+<!--
     <script type="text/javascript">
     //<![CDATA[
     $(document).ready(function(){
@@ -489,7 +529,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     });
     //]]>
     </script>
-
+-->
+    <script type="text/javascript" src="assets/js/bxslider/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/js/bxslider/jquery.bxslider.css">
+    <script>
+    $(document).ready(function(){
+	    $('.bx').bxSlider({
+	      infiniteLoop: false,
+	      hideControlOnEnd: true});
+	    });
+    </script>
+        
 
 	</body>
 </html>
