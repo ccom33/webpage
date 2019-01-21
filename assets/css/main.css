@@ -1356,6 +1356,7 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
 
+/*
 		#header nav.use-middle:after {
 			content: '';
 			display: block;
@@ -1365,6 +1366,7 @@ input, select, textarea {
 			width: 1px;
 			height: 100%;
 			background: #ffffff;
+*/
 		}
 
 		#header nav.use-middle ul li.is-middle {
@@ -1602,6 +1604,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 /* Footer */
 
