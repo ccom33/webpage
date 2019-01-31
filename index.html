@@ -12,9 +12,7 @@
 <!--        스크립트 정의 -->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!--        <script src="assets/js/jquery.bxslider.min.js"></script>-->
 <!--        css 정의 -->
-<!--        <link rel="stylesheet" href="assets/css/jquery.bxslider.min.css">-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/w3.css" >
 <!--        폰트 정의-->
@@ -41,7 +39,101 @@
                     font-family: 'Poor Story', cursive;
                 }
                 
+/* 슬라이드 스타일 지정 */
+                
                 .mySlides {display:none}
+                .w3-left, .w3-right, .w3-badge {cursor:pointer}
+                .w3-badge {height:13px;width:13px;padding:0}
+                .slideshow-container {
+                  max-width: 1000px;
+                  position: relative;
+                  margin: auto;
+                }
+
+                /* Next & previous buttons */
+                .prev, .next {
+                  cursor: pointer;
+                  position: absolute;
+                  top: 50%;
+                  width: auto;
+                  margin-top: -22px;
+                  padding: 16px;
+                  color: gold;
+                  font-weight: bold;
+                  font-size: 18px;
+                  transition: 0.7s ease;
+                  border-radius: 0 3px 3px 0;
+                }
+
+                /* Position the "next button" to the right */
+                .next {
+                  right: 0;
+                  border-radius: 3px 0 0 3px;
+                }
+
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover, .next:hover {
+                /*  background-color: rgba(0,0,0,0.8);*/
+                }
+
+                /* Caption text */
+                .text {
+                  color: #f2f2f2;
+                  font-size: 15px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  bottom:20px;
+                  width: 100%;
+                  text-align: center;
+                }
+                .mySlides {
+                  display:none;
+                }
+                .active-slide {
+                  display:block;
+                }
+                /* Number text (1/3 etc) */
+                .numbertext {
+                  color: #f2f2f2;
+                  font-size: 12px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  top: 0;
+                }
+
+                /* The dots/bullets/indicators */
+                .dot {
+                  cursor:pointer;
+                  height: 13px;
+                  width: 13px;
+                  margin: 0 2px;
+                  background-color: #bbb;
+                  border-radius: 50%;
+                  display: inline-block;
+                  transition: background-color 0.6s ease;
+                }
+
+                .active, .dot:hover {
+                  background-color: #717171;
+                }
+
+                /* Fading animation */
+                .fade {
+                  -webkit-animation-name: fade;
+                  -webkit-animation-duration: 1.5s;
+                  animation-name: fade;
+                  animation-duration: 1.5s;
+                }
+
+                @-webkit-keyframes fade {
+                  from {opacity: .4}
+                  to {opacity: 1}
+                }
+
+                @keyframes fade {
+                  from {opacity: .4}
+                  to {opacity: 1}
+                }
                 
             </style>
 	</head>
@@ -86,6 +178,89 @@
 							<article id="intro">
 								<h2 class="major">프롤로그</h2>
 								<span class="image main">
+                                    <div class="slideshow-container">
+                                        
+<!--
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">1 / 4</div>
+                                            <img src="http://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+                                            <div class="text">Caption Text</div>
+                                        </div>
+-->
+                                      
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">1 / 11</div>
+                                        <img src="images/p_1.bmp" style="width:100%">
+                                      </div>
+
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">2 / 11</div>
+                                        <img src="images/p_2.bmp" style="width:100%">
+                                      </div>
+
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">3 / 11</div>
+                                        <img src="images/p_3.bmp" style="width:100%">
+                                      </div>
+
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">4 / 11</div>
+                                        <img src="images/p_4.bmp" style="width:100%">
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">5 / 11</div>
+                                        <img src="images/p_6.bmp" style="width:100%">
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">6 / 11</div>
+                                        <img src="images/p_7.bmp" style="width:100%">
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">7 / 11</div>
+                                        <img src="images/p_8.bmp" style="width:100%">
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">8 / 11</div>
+                                        <img src="images/p_9.bmp" style="width:100%">
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">9 / 11</div>
+                                        <img src="images/p_10.bmp" style="width:100%">
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">10 / 11</div>
+                                        <img src="images/p_11.bmp" style="width:100%">
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">11 / 11</div>
+                                        <img src="images/p_12.bmp" style="width:100%">
+                                      </div>
+
+                                      <a class="prev">&#10094;</a>
+                                      <a class="next">&#10095;</a>
+
+                                    <div style="text-align:center">
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                    </div>
+                                    </div>
+<!--
                                     <div class="w3-content">
                                         <img class="mySlides" src="images/p_1.bmp" >
                                         <img class="mySlides" src="images/p_2.bmp" >
@@ -118,40 +293,99 @@
                                           <button class="w3-button demo" onclick="currentDiv(10)">10</button> 
                                           <button class="w3-button demo" onclick="currentDiv(11)">11</button>  
                                         </div>
+-->
                                     
                                 </span>
-                								<p>
-                                </p>    
+                                    <p>
+                                    </p>    
 							 </article>
 
 						<!-- introduce -->
 							<article id="introduce">
 								<h2 class="major">구성원소개</h2>
 								<span class="image main">
-                                    <div class="w3-content" >
-                                        <img class="mySlides" src="images/gg.bmp" >
+                                    
+                                    <div class="slideshow-container">
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">1 / 1</div>
+                                        <img src="images/gg.bmp" style="width:100%">
+                                      </div>
+                                        <a class="prev">&#10094;</a>
+                                        <a class="next">&#10095;</a>
 
-                                     </div>
-
-                                        <div class="w3-center">
-                                          <div class="w3-section">
-                                            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-                                            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
-                                          </div>
-                                            
-                                          <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-                                           
-                                        </div>
+                                      <div style="text-align:center">
+                                        <span class="dot"></span>
+            
+                                      </div>
+                                    </div>
+                                   
                                 </span>
 								<p>
-                  
-                </p>
+                                
+                                </p>
 							 </article> 
 
 						<!-- Work1 --> 
 							<article id="work1"> 
 								<h2 class="major">분석결과1</h2>
 								<span class="image main">
+                                     <div class="slideshow-container">
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">1 / 7</div>
+                                        <img src="images/g1_1.bmp" style="width:100%">
+                                        
+                                      </div>
+
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">2 / 7</div>
+                                        <img src="images/g1_2.bmp" style="width:100%">
+                                        
+                                      </div>
+
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">3 / 7</div>
+                                        <img src="images/g1_3.bmp" style="width:100%">
+                                        
+                                      </div>
+
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">4 / 7</div>
+                                        <img src="images/g1_4.bmp" style="width:100%">
+                                        
+                                      </div>
+                                         
+                                         <div class="mySlides fade">
+                                        <div class="numbertext">5 / 7</div>
+                                        <img src="images/g1_5.bmp" style="width:100%">
+                                        
+                                      </div>
+                                         
+                                         <div class="mySlides fade">
+                                        <div class="numbertext">6 / 7</div>
+                                        <img src="images/g1_6.bmp" style="width:100%">
+                                        
+                                      </div>
+                                         
+                                         <div class="mySlides fade">
+                                        <div class="numbertext">7 / 7</div>
+                                        <img src="images/g1_7.bmp" style="width:100%">
+                                        
+                                      </div>
+
+                                      <a class="prev">&#10094;</a>
+                                      <a class="next">&#10095;</a>
+
+                                    <div style="text-align:center">
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                    </div>
+                                    </div>
+<!--
                                     <div class="w3-content" >
                                           <img class="mySlides" src="images/g1_1.bmp" >
                                           <img class="mySlides" src="images/g1_2.bmp" >
@@ -176,6 +410,7 @@
                                           <button class="w3-button demo" onclick="currentDiv(6)">6</button>
                                           <button class="w3-button demo" onclick="currentDiv(7)">7</button>
                                         </div>
+-->
                                 </span>
 								                    <p>3가지 가설을 세워봤습니다.
                                     가설에 대한 분석을 시작하기 앞서 2017년 개봉작을 기준으로 2017년 12월에 개봉한 영화는 다음해 2월까지 상영하였기 때문에 2017년 1월부터 18년 2월까지 총 14개월을 기준으로 하였습니다. <br>
@@ -204,6 +439,51 @@
 							<article id="work2">
 								<h2 class="major">분석결과2</h2>
 								<span class="image main">
+                                    
+                                    <div class="slideshow-container">
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">1 / 5</div>
+                                        <img src="images/g2_1.bmp" style="width:100%">
+                                        
+                                      </div>
+
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">2 / 5</div>
+                                        <img src="images/g2_2.bmp" style="width:100%">
+                                        
+                                      </div>
+
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">3 / 5</div>
+                                        <img src="images/g2_3.bmp" style="width:100%">
+                                        
+                                      </div>
+
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">4 / 5</div>
+                                        <img src="images/g2_4.bmp" style="width:100%">
+                                        
+                                      </div>
+                                         
+                                         <div class="mySlides fade">
+                                        <div class="numbertext">5 / 5</div>
+                                        <img src="images/g2_5.bmp" style="width:100%">
+                                        
+                                      </div>
+
+                                      <a class="prev">&#10094;</a>
+                                      <a class="next">&#10095;</a>
+
+                                    <div style="text-align:center">
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                    </div>
+                                    </div>
+                                    
+<!--
                                    <div class="w3-content">
                                           <img class="mySlides" src="images/g2_1.bmp" >
                                           <img class="mySlides" src="images/g2_2.bmp" >
@@ -224,93 +504,186 @@
                                           <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
                                           <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
                                         </div>
+-->
                                 </span>
 								<p> 두번째 가설입니다.
-스크린수는 충분조건이지 필요조건이 아니다. 라는 가설을 세웠습니다.
-<br>
-먼저 스크린수 그래프를 살펴 보겠습니다.
-스크린수는 신과함께가 가장 많고 택시운전사, 범죄도시 순으로 많습니다.
-<br>
-하지만 매출 그래프에서는 그렇지 않습니다.
-스크린 수가 많다고 해서 매출이 높은 것은 아니다.는 말입니다.
-<br>
-따라서 흥행하는 영화일수록 영화관 입장에서 스크린을 추가로 열어주는 것이 맞겠지만 반드시 그럴 필요는 없다는 것이 결론입니다.
-</p>
+                                스크린수는 충분조건이지 필요조건이 아니다. 라는 가설을 세웠습니다.
+                                <br>
+                                먼저 스크린수 그래프를 살펴 보겠습니다.
+                                스크린수는 신과함께가 가장 많고 택시운전사, 범죄도시 순으로 많습니다.
+                                <br>
+                                하지만 매출 그래프에서는 그렇지 않습니다.
+                                스크린 수가 많다고 해서 매출이 높은 것은 아니다.는 말입니다.
+                                <br>
+                                따라서 흥행하는 영화일수록 영화관 입장에서 스크린을 추가로 열어주는 것이 맞겠지만 반드시 그럴 필요는 없다는 것이 결론입니다.
+                                </p>
 							</article>
                         
                         <!-- work3 -->
                         <article id="work3">
 								<h2 class="major">분석결과3</h2>
 								<span class="image main">
-                                    <div class="w3-content" >
-                                          <img class="mySlides" src="images/g3_1.bmp" >
-                                          <img class="mySlides" src="images/g3_2.bmp" >
-                                          <img class="mySlides" src="images/g3_3.bmp" >
-                                          <img class="mySlides" src="images/g3_4.bmp" >
-                                          <img class="mySlides" src="images/g3_5.bmp" >
-                                          <img class="mySlides" src="images/g3_6.bmp" >
-                                          <img class="mySlides" src="images/g3_7.bmp" >
-                                          <img class="mySlides" src="images/g3_8.bmp" >
-                                          <img class="mySlides" src="images/g3_9.bmp" >
-                                          <img class="mySlides" src="images/g3_10.bmp" >
-                                          <img class="mySlides" src="images/g3_11.bmp" >
-                                          <img class="mySlides" src="images/g3_12.bmp" >
-                                          <img class="mySlides" src="images/g3_13.bmp" >
-                                          <img class="mySlides" src="images/g3_14.bmp" >
-                                          <img class="mySlides" src="images/g3_15.bmp" >
-                                          <img class="mySlides" src="images/g3_16.bmp" >
-                                          <img class="mySlides" src="images/g3_17.bmp" >
-                                          <img class="mySlides" src="images/g3_18.bmp" >
-                                        </div>
+                                    <div class="slideshow-container">
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">1 / 18</div>
+                                        <img src="images/g3_1.bmp" style="width:100%">
+                                        
+                                      </div>
 
-                                        <div class="w3-center">
-                                          <div class="w3-section">
-                                            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-                                            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
-                                          </div>
-                                            
-                                          <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-                                          <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-                                          <button class="w3-button demo" onclick="currentDiv(3)">3</button>
-                                          <button class="w3-button demo" onclick="currentDiv(4)">4</button>
-                                          <button class="w3-button demo" onclick="currentDiv(5)">5</button>
-                                          <button class="w3-button demo" onclick="currentDiv(6)">6</button>
-                                          <button class="w3-button demo" onclick="currentDiv(7)">7</button>
-                                          <button class="w3-button demo" onclick="currentDiv(8)">8</button>
-                                          <button class="w3-button demo" onclick="currentDiv(9)">9</button>
-                                          <button class="w3-button demo" onclick="currentDiv(10)">10</button>
-                                          <button class="w3-button demo" onclick="currentDiv(11)">11</button>
-                                          <button class="w3-button demo" onclick="currentDiv(12)">12</button>
-                                          <button class="w3-button demo" onclick="currentDiv(13)">13</button>
-                                          <button class="w3-button demo" onclick="currentDiv(14)">14</button>
-                                          <button class="w3-button demo" onclick="currentDiv(15)">15</button>
-                                          <button class="w3-button demo" onclick="currentDiv(16)">16</button>
-                                          <button class="w3-button demo" onclick="currentDiv(17)">17</button>
-                                          <button class="w3-button demo" onclick="currentDiv(18)">18</button>
-                                        </div>
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">2 / 18</div>
+                                        <img src="images/g3_2.bmp" style="width:100%">
+                                        
+                                      </div>
+
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">3 / 18</div>
+                                        <img src="images/g3_3.bmp" style="width:100%">
+                                        
+                                      </div>
+
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">4 / 18</div>
+                                        <img src="images/g3_4.bmp" style="width:100%">
+                                        
+                                      </div>
+                                         
+                                         <div class="mySlides fade">
+                                        <div class="numbertext">5 / 18</div>
+                                        <img src="images/g3_5.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">6 / 18</div>
+                                        <img src="images/g3_6.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">7 / 18</div>
+                                        <img src="images/g3_7.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">8 / 18</div>
+                                        <img src="images/g3_8.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">9 / 18</div>
+                                        <img src="images/g3_9.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">10 / 18</div>
+                                        <img src="images/g3_10.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">11 / 18</div>
+                                        <img src="images/g3_11.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">12 / 18</div>
+                                        <img src="images/g3_12.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">13 / 18</div>
+                                        <img src="images/g3_13.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">14 / 18</div>
+                                        <img src="images/g3_14.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">15 / 18</div>
+                                        <img src="images/g3_15.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">16 / 18</div>
+                                        <img src="images/g3_16.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">17 / 18</div>
+                                        <img src="images/g3_17.bmp" style="width:100%">
+                                        
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">18 / 18</div>
+                                        <img src="images/g3_18.bmp" style="width:100%">
+                                        
+                                      </div>
+
+                                      <a class="prev">&#10094;</a>
+                                      <a class="next">&#10095;</a>
+
+                                    <div style="text-align:center">
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                    </div>
+                                </div>
+                                    
+                                    
                                 </span>
 								<p>
-                  
-                </p>
+                                </p>
 							</article>
 
 						<!-- complete -->
 							<article id="complete">
 								<h2 class="major">결론</h2>
 								<span class="image main">
-                                   <div class="w3-content" style="max-width:800px">
-                                          <img class="mySlides" src="images/g.bmp" style="width:100%">
-                                        </div>
+                                    
+                                    <div class="slideshow-container">
+                                        
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">1 / 1</div>
+                                        <img src="images/g.bmp" style="width:100%">
+                                      </div>
+                                        
+                                        <a class="prev">&#10094;</a>
+                                        <a class="next">&#10095;</a>
 
-                                        <div class="w3-center">
-                                          <div class="w3-section">
-                                            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-                                            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
-                                          </div>
-                                            
-                                          <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-                                         
-                                        </div>
+                                      <div style="text-align:center">
+                                        <span class="dot"></span>
+            
+                                      </div>
+                                    </div>
+                                    
                                 </span>
 								<p></p>
 							</article>
@@ -319,22 +692,34 @@
 							<article id="future">
 								<h2 class="major">예측</h2>
                                 <span class="image main">
-                                  <div class="w3-content" style="max-width:800px">
-                                          <img class="mySlides" src="images/y_1.bmp">
-                                          <img class="mySlides" src="images/y_2-1.bmp">
-                                          <img class="mySlides" src="images/y_2.bmp">
-                                        </div>
+                                    <div class="slideshow-container">
+                                        
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">1 / 3</div>
+                                        <img src="images/y_1.bmp" style="width:100%">
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">2 / 3</div>
+                                        <img src="images/y_2-1.bmp" style="width:100%">
+                                      </div>
+                                        
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">3 / 3</div>
+                                        <img src="images/y_2.bmp" style="width:100%">
+                                      </div>
+                                        
+                                        <a class="prev">&#10094;</a>
+                                        <a class="next">&#10095;</a>
 
-                                        <div class="w3-center">
-                                          <div class="w3-section">
-                                            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-                                            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
-                                          </div>
-                                            
-                                          <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-                                          <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-                                          <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
-                                        </div>
+                                      <div style="text-align:center">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+            
+                                      </div>
+                                    </div>
+                                    
                                 </span>
 								<p></p>
 
@@ -344,24 +729,7 @@
                             <article id="copyright">
 								<h2 class="major">출처</h2>
 								<span class="image main">
-                                    <!-- <div class="w3-content" style="max-width:800px">
-                                          <img class="mySlides" src="images/%EA%B4%91%EB%B3%B5%EC%A0%88.png" >
-                                          <img class="mySlides" src="images/%EC%84%A4%EC%97%B0%ED%9C%B4.png" >
-                                          <img class="mySlides" src="images/%EC%B6%94%EC%84%9D%EC%97%B0%ED%9C%B4.png">
-                                          <img class="mySlides" src="images/bg.jpg">
-                                        </div>
-
-                                        <div class="w3-center">
-                                          <div class="w3-section">
-                                            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-                                            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
-                                          </div>
-                                            
-                                          <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-                                          <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-                                          <button class="w3-button demo" onclick="currentDiv(3)">3</button>
-                                          <button class="w3-button demo" onclick="currentDiv(4)">4</button>
-                                        </div> -->
+                                    
                                 </span>
                                 
                                 <p>
@@ -407,46 +775,91 @@
 			<script src="assets/js/main.js"></script>
         
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-red", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-red";
-}
 </script>
-        
 
-<!--
-    <script type="text/javascript" src="assets/js/bxslider/jquery.bxslider.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/js/bxslider/jquery.bxslider.css">
-    <script>
-    $(document).ready(function(){
-	    $('.bx').bxSlider({
-	      infiniteLoop: false,
-	      hideControlOnEnd: true});
-	    });
-    </script>
--->
+<script>
+(function() {
+
+  init(); //페이지 로드후 첫번째 슬라이드 설정.
+
+  function init() {
+
+    parents = document.getElementsByClassName('slideshow-container');
+
+    for (j = 0; j < parents.length; j++) {
+      var slides = parents[j].getElementsByClassName("mySlides");
+      var dots = parents[j].getElementsByClassName("dot");
+      slides[0].classList.add('active-slide');
+      dots[0].classList.add('active');
+    }
+  }
+
+  dots = document.getElementsByClassName('dot'); //dots 함수
+
+  for (i = 0; i < dots.length; i++) {
+
+    dots[i].onclick = function() {
+
+      slides = this.parentNode.parentNode.getElementsByClassName("mySlides");
+
+      for (j = 0; j < this.parentNode.children.length; j++) {
+        this.parentNode.children[j].classList.remove('active');
+        slides[j].classList.remove('active-slide');
+        if (this.parentNode.children[j] == this) {
+          index = j;
+        }
+      }
+      this.classList.add('active');
+      slides[index].classList.add('active-slide');
+
+    }
+  }
+//prev/next 함수
+  links = document.querySelectorAll('.slideshow-container a');
+
+  for (i = 0; i < links.length; i++) {
+    links[i].onclick = function() {
+      current = this.parentNode;
+
+      var slides = current.getElementsByClassName("mySlides");
+      var dots = current.getElementsByClassName("dot");
+      curr_slide = current.getElementsByClassName('active-slide')[0];
+      curr_dot = current.getElementsByClassName('active')[0];
+      curr_slide.classList.remove('active-slide');
+      curr_dot.classList.remove('active');
+//        next
+      if (this.className == 'next') {
+
+        if (curr_slide.nextElementSibling.classList.contains('mySlides')) {
+          curr_slide.nextElementSibling.classList.add('active-slide');
+          curr_dot.nextElementSibling.classList.add('active');
+        } else {
+          slides[0].classList.add('active-slide');
+          dots[0].classList.add('active');
+        }
+
+      }
+//         prev
+      if (this.className == 'prev') {
+
+        if (curr_slide.previousElementSibling) {
+          curr_slide.previousElementSibling.classList.add('active-slide');
+          curr_dot.previousElementSibling.classList.add('active');
+        } else {
+          slides[slides.length - 1].classList.add('active-slide');
+          dots[slides.length - 1].classList.add('active');
+        }
+
+      }
+
+    }
+
+  }
+})();
+        
+        </script>
+
         
 
 	</body>
